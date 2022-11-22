@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>FTA SHOP</title>
+		<link rel="stylesheet" type="text/css" href="/Project/User/css/style.css">
+		<link rel="stylesheet" href="css/new.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src ="js/total.js"></script>
+		<script src="js/jquery-3.6.0.js"></script>	
+		<script src="js/cart.js"></script>	
+	</head>
+<body>
+    <div id="header">
+        <div class="s1">
+            <img src="https://www.kindpng.com/picc/m/99-996180_logo-rng-p-hd-png-download.png" alt="">
+            <h1>Linh liện điện tử FTA</h1>
+            <div class="seach">
+                <input type="text">
+                <i class="fa fa-search fa-1.5x" aria-hidden="true"></i>
+            </div>
+            <div class="cart">
+                <a href="">
+                    <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                    <span>Hỗ trợ</span>
+                    <span style = "font-size:18px;">0988748912</span>
+                </a>
+            </div>            
+            <div class="cart">
+                <a href="cart.html">
+                    <i class="fa fa-shopping-basket fa-2x" aria-hidden="true"></i>
+                    <span>(<span class = "cart-amount">0</span>) Sản Phẩm</span><br>
+                    <span style = "font-size:14px;">Giỏ hàng</span>
+                </a>
+            </div>
+            <label onclick="pdk()" id="dk" class="login">Đăng kí</label>
+            <label onclick="pdn()" id="dn" class="login">Đăng nhập</label>
+    
+        </div>
+        <div id="menu_tab">
+            <ul class="menu">
+			  <li><a href="index.html">Trang chủ</a></li>
+              <li><a href="#" >Sản phẩm </a></li>
+              <li><a href="#">Tin tức</a></li>
+              <li><a href="#">Thảo luận</a></li>
+              <li><a href="contact.html" >Contact Us</a></li>
+              <li><a href="details.html">Details</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <div id="main">
+			<div id="content-title">
+				<label class="cart-title">Giỏ Hàng</label>
+			</div>
+			<div id="content-left" class="col-9 col-m8 col-s12">			
+				<!--<div class="cart-item">			
+					<img  src="//bizweb.dktcdn.net/100/228/168/files/kit-easy-8051.jpg?v=1616299139172" alt="">
+					<div class="cart-product">
+						<label class="item-name">Trà chanh VIP</label>
+						<label class="item-size">Size: L</label>
+						<label class="item-delete">Xóa</label>
+						<label class="item-later">Để mua sau</label>
+					</div>
+					<div class="cart-price">
+						<label class="item-price">35.000</label>
+						<label class="item-old-price"><s>50.000</s></label>
+						<label class="item-discount">-30%</label>
+					</div>
+					<div class="cart-quality">
+						<input class="btn sub" type="button" value="-" />
+						<input class="btn quality" type="text" value="1"/>
+						<input class="btn plus" type="button" value="+" />
+					</div>				
+				</div>			
+				<div class="cart-item">			
+					<img src="//bizweb.dktcdn.net/100/228/168/files/kit-easy-8051.jpg?v=1616299139172" alt="">
+					<div class="cart-product">
+						<label class="item-name">Trà chanh VIP2</label>
+						<label class="item-size">Size: S</label>
+						<label class="item-delete">Xóa</label>
+						<label class="item-later">Để mua sau</label>
+					</div>
+					<div class="cart-price">
+						<label class="item-price">35.000</label>
+						<label class="item-old-price"><s>50.000</s></label>
+						<label class="item-discount">-30%</label>
+					</div>
+					<div class="cart-quality">
+						<input onclick="SubAmount('2')"  class="btn sub" type="button" value="-" />
+						<input id="2" class="btn quality" type="text" value="1" />
+						<input  onclick="IncreaseAmount('2')"  class="btn plus" type="button" value="+" />
+					</div>				
+				</div>			
+				<div class="cart-item">			
+					<img src="//bizweb.dktcdn.net/100/228/168/files/kit-easy-8051.jpg?v=1616299139172" alt="">
+					<div class="cart-product">
+						<label class="item-name">Trà chanh VIP3</label>
+						<label class="item-size">Size: M</label>
+						<label class="item-delete">Xóa</label>
+						<label class="item-later">Để mua sau</label>
+					</div>
+					<div class="cart-price">
+						<label class="item-price">35.000</label>
+						<label class="item-old-price"><s>50.000</s></label>
+						<label class="item-discount">-30%</label>
+					</div>
+					<div class="cart-quality">
+						<input onclick ="SubAmount('3')" class="btn sub" type="button" value="-" />
+						<input id="3" class="btn quality" type="text" value="1" />
+						<input onclick="IncreaseAmount('3')" class="btn plus" type="button" value="+" />
+					</div>			-->	
+				</div>
+			</div>		
+			<div id="content-right"class="col-3 col-m4 col-s12" >		
+				<div id="user-address">
+                    <label>Người nhận: Hoàng Qúy Quỳnh</label>
+                    <label for=""> Địa chỉ: Tân Tiến - Văn Giang - Hưng Yên</label>
+                    <label for="">Số ĐT: 0999323498</label>
+				</div>
+				<div id="user-coupon">
+					<label class ="a" for="">Giảm 20k cho đơn hàng từ 250k </label> 
+					<label class ="b" for=""> Lấy Mã</label>
+					<label class ="a" for="">Giảm 20k cho đơn hàng từ 250k </label> 
+					<label class ="b" for="">Lấy mã</label>
+				</div>
+				<div id="user-payment">
+					<label style="line-height: 40px;  padding-top: 10px;">Tạm tính</label>
+					<label class="tmp-price">0 đ</label>
+					<br><label  style="line-height: 40px; padding-top: 10px;">Thành tiền</label>
+					<label class="total-price">0 đ</label>
+					<br><br><input class="btn-payment" type="button" onclick="location.href='payment.html'" value="Tiến hành đặt hàng"/>
+				</div>					
+			</div>			
+		</div>		
+    </div>
+    <div id="footer">
+        <div class="about col-4 col-m6 col-s12">
+            <h2>Về chúng tôi</h2>
+            <img src="https://www.kindpng.com/picc/m/99-996180_logo-rng-p-hd-png-download.png" alt="">
+            <h3>Cửa hàng link kiện điện tử FTA</h3><br>
+            <h4><a href="">Lịch sử</a></h4>
+            <h4><a href="">Hợp tác</a></h4>
+            <h4><a href="">Trợ giúp khách hàng</a></h4>
+        </div>
+        <div class="contact col-4 col-m6 col-s12">
+            <h2>Liên hệ</h2>
+            <h4>Emal: dientufta@gmail.com</h4>
+            <h4>Số điện thoại: 0988194325</h4>
+            
+            <h4>Địa chỉ: Số 1 - đường Đỗ Thế Diên - phường Nhân Hòa - thị Xã Mỹ Hào - Tỉnh Hưng Yên</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927.8464562538502!2d106.05965336923083!3d20.94167028979476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a30555555555%3A0x39a8acd006ab8e69!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTxrAgUGjhuqFtIEvhu7kgVGh14bqtdCBIxrBuZyBZw6puLCBDxqEgc-G7nyAy!5e1!3m2!1svi!2s!4v1619946614011!5m2!1svi!2s" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="acount col-4 col-m6 col-s12">
+            <h2>Thông tin tài khoản</h2>
+            <p>
+                Chủ TK: Hoàng Qúy Quỳnh
+                <br><br>
+                VietcomBank: 0021000290539<br><br>               
+                VietinBank:106003292522<br><br>
+                Techcombank: 19030476709015<br><br>                
+                AgriBank: 1303206306288<br><br>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
